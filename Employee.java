@@ -2,76 +2,74 @@ package employeefile;
 
 /**
  *
- * @author Your Name Here
+ * @author The Promised Lan
  */
 public class Employee {
 
     private int empId;
-    private String lastName;
-    private String firstName;
-    private String homePhone;
-    private double salary;
+    private int patientNumber;
+    private String dateTime;
+    private int bloodReading;
+    private String comment;
 
     public Employee() {
         empId = 0;
-        lastName = "";
-        firstName = "";
-        homePhone = "";
-        salary = 0;
+        patientNumber = 0;
+        dateTime = "";
+        bloodReading = 0;
+        comment = "";
     }
 
-    public Employee(int empId, String lastName, String firstName, String homePhone, double salary) {
+    public Employee(int empId, int patientNumber, String dateTime, int bloodReading, String comment) {
         this.empId = empId;
-        this.lastName = lastName;
-        this.firstName = firstName;
-        this.homePhone = homePhone;
-        this.salary = salary;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        this.patientNumber = patientNumber;
+        this.dateTime = dateTime;
+        this.bloodReading = bloodReading;
+        this.comment = comment;
     }
 
     public int getEmpId() {
         return empId;
     }
 
-    public void setEmpId(int empId) {
-        this.empId = empId;
+    public void setEmpId(int EmpId) {
+        this.empId  = empId;
     }
 
-    public String getLastName() {
-        return lastName;
+    public int getPatientNumber() {
+        return patientNumber;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setPatientNumber(int patientNumber) {
+        this.patientNumber = patientNumber;
     }
 
-    public String getHomePhone() {
-        return homePhone;
+    public String getDateTime() {
+        return dateTime;
     }
 
-    public void setHomePhone(String homePhone) {
-        this.homePhone = homePhone;
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
-    public double getSalary() {
-        return salary;
+    public int getBloodReading() {
+        return bloodReading;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public void setBloodReading(int bloodReading) {
+        this.bloodReading = bloodReading;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     @Override
     public String toString() {
-        return "Employee{" + "empId=" + empId + ", lastName=" + lastName 
-                + ", firstName=" + firstName + ", homePhone=" + homePhone 
-                + ", salary=" + salary + '}';
+        return "Employee{" + "empId=" + empId + ", patientNumber=" + patientNumber + ", dateTime=" + dateTime + ", bloodReading=" + bloodReading + ", comment=" + comment + '}';
     }
 }
